@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="marine">#1A4F63</color>
+    <color name="turquoise">#068587</color>
+    <color name="green">#6FB07F</color>
+    <color name="ambar">#FCB03C</color>
+    <color name="peach">#FC5B3F</color>
 </resources>
