@@ -1,6 +1,8 @@
 package com.example.nicestart;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,18 @@ public class Login extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    //metodo para login button
+    public void openMain(View v){
+        Intent intent = new Intent(Login.this,MainActivity.class);
+
+        startActivity(intent);
+    }
+
+    public void signUp(View v){
+        Intent intent = new Intent(Login.this,SignUp.class);
+
+        startActivity(intent);
     }
 }

@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
+    tools:context=".SignUp"
     android:background="@drawable/gradient">
 
     <ImageView
@@ -63,6 +63,27 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/gl2"
+        app:layout_constraintStart_toStartOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@id/til2"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:background="@color/white"
+            android:hint="Email"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/btn_login"
         android:layout_width="0dp"
@@ -72,22 +93,21 @@
 
         android:backgroundTint="@color/button_custom"
 
-        android:text="Login"
+        android:text="Sign Up"
         android:textColor="@color/marine"
 
         android:onClick="openMain"
 
         app:layout_constraintStart_toStartOf="@id/gl1"
         app:layout_constraintEnd_toEndOf="@id/gl2"
-        app:layout_constraintTop_toBottomOf="@id/til2"
+        app:layout_constraintTop_toBottomOf="@id/email"
         style="@style/Widget.MaterialComponents.Button"/>
 
     <Button
         android:id="@+id/btn_signUp"
 
-        android:text="Sign Up"
-
-        android:onClick="signUp"
+        android:text="Cancel"
+        android:onClick="cancel"
 
         app:layout_constraintStart_toStartOf="@id/gl1"
         app:layout_constraintEnd_toEndOf="@id/gl2"
