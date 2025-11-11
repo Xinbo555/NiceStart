@@ -2,7 +2,7 @@ package com.example.nicestart;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.os.Handler;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,30 +10,31 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Login extends AppCompatActivity {
+public class Splash extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_splash);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        openApp();
     }
 
-    //metodo para login button
-    public void openMain(View v){
-        Intent intent = new Intent(Login.this,MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(intent);
-    }
+    private void openApp() {
 
-    public void signUp(View v){
-        Intent intent = new Intent(Login.this,SignUp.class);
-        startActivity(intent);
+        Handler handler = new Handler();
+
+        handler.postDelayed(()->{
+            Intent intent = new Intent(Splash.this, Login.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+            startActivity(intent);
+        },5000);
     }
 }
