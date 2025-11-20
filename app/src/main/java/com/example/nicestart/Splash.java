@@ -3,6 +3,8 @@ package com.example.nicestart;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -28,6 +30,13 @@ public class Splash extends AppCompatActivity {
                 .load(R.drawable.girl)
                 .centerCrop()
                 .into(mSea);
+
+        //objeto corona sobre el cual aplicaremos la animación
+        ImageView crown = findViewById(R.id.crown);
+
+        //creamos un objeto animacion que incorpola la animacion de xml
+        Animation myanim = AnimationUtils.loadAnimation(this,R.anim.blink);
+        crown.startAnimation(myanim);
     }
 
     private void openApp() {
