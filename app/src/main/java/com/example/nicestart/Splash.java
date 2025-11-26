@@ -3,6 +3,8 @@ package com.example.nicestart;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -23,6 +25,14 @@ public class Splash extends AppCompatActivity {
         openApp();
 
         ImageView mSea = findViewById(R.id.backView);
+
+        ImageView logo = findViewById(R.id.logo);
+
+        Animation anim = AnimationUtils.loadAnimation(this,R.anim.blink);
+
+        logo.startAnimation(anim);
+
+        openApp();
 
         Glide.with(this)
                 .load(R.drawable.girl)
