@@ -22,29 +22,21 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
-        openApp();
 
         ImageView mSea = findViewById(R.id.backView);
 
-        ImageView logo = findViewById(R.id.logo);
-
         Animation anim = AnimationUtils.loadAnimation(this,R.anim.blink);
 
-        logo.startAnimation(anim);
+        ImageView crown = findViewById(R.id.crown);
 
-        openApp();
+        crown.startAnimation(anim);
 
         Glide.with(this)
                 .load(R.drawable.girl)
                 .centerCrop()
                 .into(mSea);
 
-        //objeto corona sobre el cual aplicaremos la animación
-        ImageView crown = findViewById(R.id.crown);
-
-        //creamos un objeto animacion que incorpola la animacion de xml
-        Animation myanim = AnimationUtils.loadAnimation(this,R.anim.blink);
-        crown.startAnimation(myanim);
+        openApp();
     }
 
     private void openApp() {
