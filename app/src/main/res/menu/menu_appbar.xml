@@ -2,16 +2,29 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/item2"
+        android:id="@+id/itemSettings"
         android:title="Settings"
         app:showAsAction="never"/>
 
     <item
-        android:id="@+id/item1"
+        android:id="@+id/item0"
         android:title="Copy"
         android:icon="@drawable/albun"
-        app:showAsAction="always">
+        app:showAsAction="ifRoom">
 
-
+        <menu>
+            <item
+                android:id="@id/item1"
+                android:title="Copy"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:id="@id/item2"
+                android:title="Settings"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:id="@+id/item3"
+                android:title="Explorer"
+                app:showAsAction="ifRoom"/>
+        </menu>
     </item>
 </menu>

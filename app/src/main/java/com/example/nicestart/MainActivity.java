@@ -1,5 +1,6 @@
 package com.example.nicestart;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -9,8 +10,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onContextItemSelected(MenuItem item){
-        if(item.getItemId() == R.id.item1) {
+        if(item.getItemId() == R.id.item0) {
             Toast toast = Toast.makeText(this, "Item copied", Toast.LENGTH_LONG);
             toast.show();
         } else if(item.getItemId() == R.id.item2) {
@@ -51,6 +55,37 @@ public class MainActivity extends AppCompatActivity {
             toast2.show();
         }
         return false;
+    }
+
+    public void showAlertDialogButtonClicked(MainActivity mainActivity){
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+
+        builder.setTitle("setTitle");
+
+        builder.setMessage("A donde quieres ir");
+        builder.setCancelable(true);
+
+        builder.setPositiveButton("Scrolling",(dialog,which)->{
+            Intent intent = new Intent(MainActivity.this,Login.class);
+            Toast toast = Toast.makeText(this, "Scrolling...", Toast.LENGTH_LONG);
+            toast.show();
+        });
+
+        builder.setNegativeButton("Do nothing",(dialog,which)->dialog.dismiss());
+
+        builder.setNeutralButton("Other",(dialog,which)->System.exit(0));
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId();
+        if(id == R.id.item3){
+            showAlertDialogButtonClicked(MainActivity.this);
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     //IMPLEMENTING APPBAR MENU
