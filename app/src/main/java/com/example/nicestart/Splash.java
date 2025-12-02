@@ -26,6 +26,14 @@ public class Splash extends AppCompatActivity {
 
         ImageView mSea = findViewById(R.id.backView);
 
+        ImageView logo = findViewById(R.id.logo);
+
+        Animation anim = AnimationUtils.loadAnimation(this,R.anim.blink);
+
+        logo.startAnimation(anim);
+
+        openApp();
+
         Glide.with(this)
                 .load(R.drawable.girl)
                 .centerCrop()
