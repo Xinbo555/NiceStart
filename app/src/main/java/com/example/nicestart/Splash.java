@@ -38,6 +38,13 @@ public class Splash extends AppCompatActivity {
                 .load(R.drawable.girl)
                 .centerCrop()
                 .into(mSea);
+
+        //objeto corona sobre el cual aplicaremos la animación
+        ImageView crown = findViewById(R.id.crown);
+
+        //creamos un objeto animacion que incorpola la animacion de xml
+        Animation myanim = AnimationUtils.loadAnimation(this,R.anim.blink);
+        crown.startAnimation(myanim);
     }
 
     private void openApp() {
