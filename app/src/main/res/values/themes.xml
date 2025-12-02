@@ -1,17 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
 
-    <style name="Base.Theme.Nicestart" parent="Theme.MaterialComponents.DayNight">
-        <item name="actionBarStyle">@style/TransparentActionBar</item>
+    <style name="Base.Theme.Nicestart" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
+
     <style name="TransparentActionBar" parent="Widget.AppCompat.ActionBar">
         <item name="background">@android:color/transparent</item>
         <item name="displayOptions">showHome</item>
+        <item name="android:elevation">0dp</item>
     </style>
     <style name="Theme.Nicestart.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-
+        <item name="android:windowIsTranslucent">true</item>
     </style>
     <style name="Theme.Nicestart" parent="Base.Theme.Nicestart" />
 </resources>
