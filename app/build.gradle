@@ -42,6 +42,8 @@ dependencies {
 
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
 
+    implementation 'com.airbnb.android:lottie:+'
+
     annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
 
 }

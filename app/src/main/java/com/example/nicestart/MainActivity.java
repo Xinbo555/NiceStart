@@ -6,6 +6,7 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +19,8 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class MainActivity extends AppCompatActivity {
 
+    private WebView miVisorWeb;
+
     private SwipeRefreshLayout swipeLayout;
 
 
@@ -27,15 +30,30 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        TextView mycontext = findViewById(R.id.myText);
+        WebView mycontext = findViewById(R.id.vistaweb);
         registerForContextMenu(mycontext);
 
         swipeLayout = findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
+
+
+        miVisorWeb = findViewById(R.id.vistaweb);
+
+        String html = "<html>"+
+                "<head><style>"+
+                "html, body { margin:0; padding:0; height:100%; overflow:hidden; }"+
+                "img { width:100%; height:100%; object-fit:cover; }"+
+                "</style></head>" +
+                "</body>" +
+                "<img src = 'https://thispersondoesnotexist.com' />"+
+                "</body></html>";
+
+        miVisorWeb.loadDataWithBaseURL(null, html, "text/html", "UTF-8",null);
     }
     protected SwipeRefreshLayout.OnRefreshListener mOnRefreshListener = ()->{
         Toast toast0 = Toast.makeText(MainActivity.this, "Hithere!",Toast.LENGTH_LONG);
         toast0.show();
+        miVisorWeb.reload();
         swipeLayout.setRefreshing(false);
     };
 
