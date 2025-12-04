@@ -1,10 +1,10 @@
-# 📱 Ejemplo de Login para Aplicación Android
+# Ejemplo de Login para Aplicación Android
 
 Esta aplicación Android incluye **login**, **registro de usuarios** y **perfil de usuario**, junto con elementos modernos de interfaz como **AppBar**, **WebView** y **SwipeRefreshLayout**.
 
 ---
 
-## 🖼 Pantallas de la aplicación
+## Pantallas de la aplicación
 
 ### Login y Registro
 ![login activity](img/login.png)  
