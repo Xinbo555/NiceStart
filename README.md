@@ -30,6 +30,9 @@ Pantalla que se abre al seleccionar una opción dentro de la pantalla anterior, 
 
 ---
 
+Estoy modificando el readme de xinbo
+
+---
 ### SwipeRefreshLayout
 ![main activity](img/swipeAnimacion.png)  
 Ejemplo de **SwipeRefreshLayout**, que permite actualizar contenido dinámicamente al deslizar hacia abajo.
