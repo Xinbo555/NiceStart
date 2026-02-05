@@ -40,6 +40,31 @@ También podemos ver una animacion de la libreria **lottie**, que muestra una an
 
 ---
 
+---
+### Landscape
+![login activity](img/landscape1.png)  
+![signup activity](img/landscape2.png)  
+Implementacion de la vista apaisado y ajustes especificos de éste para que se muestre de manera armoniosa
+
+---
+
+---
+### Locale
+![login activity](img/LocaleEnglish.png)  
+![login activity](img/LocaleSpanish.png)  
+![login activity](img/LocalValues.png)  
+También se ha tenido en cuenta las distintas configuraciones locales del dispositivo en funcion del idioma
+
+---
+
+---
+### Modo oscuro
+![profile activity](img/LocaleEnglish.png)  
+![profile activity](img/LocaleSpanish.png)   
+Mas configuraciones sobre cómo se muestra nuestra aplicacion según ahora si el usuario tiene modo claro u oscuro
+
+---
+
 ## Licencia
 
 Este repositorio está bajo la licencia:  

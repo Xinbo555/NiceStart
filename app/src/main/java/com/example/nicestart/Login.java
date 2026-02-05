@@ -33,7 +33,7 @@ public class Login extends AppCompatActivity {
 
     //metodo para login button
     public void openMain(View v){
-        Intent intent = new Intent(Login.this,Profile.class);
+        Intent intent = new Intent(Login.this,MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
 

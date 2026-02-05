@@ -15,4 +15,8 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
     <style name="Theme.Nicestart" parent="Base.Theme.Nicestart" />
+
+    <style name="ScreenBackground"><item name="android:background">@color/white</item></style>
+    <style name="TextColor"><item name="android:textColor">@color/marine</item></style>
+
 </resources>

@@ -20,7 +20,7 @@
         android:id="@+id/logo"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/ic_icono"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +32,7 @@
         android:id="@+id/til1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="@+id/gl2"
         app:layout_constraintStart_toStartOf="@+id/gl1"
         app:layout_constraintTop_toBottomOf="@id/logo"
@@ -130,13 +130,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent=".2"/>
+        app:layout_constraintGuide_percent=".35"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent=".8"/>
+        app:layout_constraintGuide_percent=".65"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

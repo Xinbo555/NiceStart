@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/white"
-            android:hint="UserName"
+            android:hint="@string/username"
             android:drawableStart="@drawable/ic_user"
             android:drawablePadding="10dp"
             />
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/white"
-            android:hint="Password"
+            android:hint="@string/password"
             android:drawableStart="@drawable/ic_password"
             android:drawableEnd="@drawable/ic_ojo"
             android:drawablePadding="10dp"
@@ -82,7 +82,7 @@
 
         android:backgroundTint="@color/button_custom"
 
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="@color/marine"
 
         android:onClick="openMain"
@@ -95,7 +95,7 @@
     <Button
         android:id="@+id/btn_signUp"
 
-        android:text="Sign Up"
+        android:text="@string/sign_up"
 
         android:onClick="signUp"
 

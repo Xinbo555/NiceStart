@@ -3,27 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/itemSettings"
-        android:title="Settings"
-        app:showAsAction="never"/>
+        android:title="@string/settings"
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/item0"
-        android:title="Copy"
+        android:title="@string/copy"
         android:icon="@drawable/albun"
         app:showAsAction="ifRoom">
 
         <menu>
             <item
-                android:id="@id/item1"
-                android:title="Copy"
+                android:id="@+id/item1"
+                android:title="@string/copy"
                 app:showAsAction="ifRoom"/>
             <item
-                android:id="@id/item2"
-                android:title="Settings"
+                android:id="@+id/item2"
+                android:title="@string/profile"
                 app:showAsAction="ifRoom"/>
             <item
                 android:id="@+id/item3"
-                android:title="Explorer"
+                android:title="@string/explorer"
                 app:showAsAction="ifRoom"/>
         </menu>
     </item>

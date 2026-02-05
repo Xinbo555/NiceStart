@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings">Ajustes</string>
+    <string name="copy">Copiar</string>
+    <string name="profile">Perfil</string>
+    <string name="explorer">Explorar</string>
+    <string name="download">Descargar</string>
+    <string name="username">Nombre de Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar Sesion</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="cancel">Cancelar</string>
+</resources>

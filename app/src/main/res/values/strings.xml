@@ -1,4 +1,15 @@
 <resources>
-    <string name="app_name">NiceStart</string>
-    <string name="citaMotivadora">"No importa cuán lento avances, cada paso te acerca a tu meta. La constancia convierte lo imposible en posible."</string>
+    <string name="app_name" translatable="false">NiceStart</string>
+    <string name="citaMotivadora" translatable="false">"No importa cuán lento avances, cada paso te acerca a tu meta. La constancia convierte lo imposible en posible."</string>
+    <string name="settings">Settings</string>
+    <string name="copy">Copy</string>
+    <string name="profile">Profile</string>
+    <string name="explorer">Explorer</string>
+    <string name="download">Download</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="cancel">Cancel</string>
 </resources>
