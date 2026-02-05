@@ -15,7 +15,7 @@
         <menu>
             <item
                 android:id="@+id/item1"
-                android:title="@string/copy"
+                android:title="@string/mainbab"
                 app:showAsAction="ifRoom"/>
             <item
                 android:id="@+id/item2"

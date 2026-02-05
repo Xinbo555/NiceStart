@@ -100,6 +100,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
+        if(id == R.id.item1){
+            Intent intent = new Intent(MainActivity.this,MainBab.class);
+            startActivity(intent);
+        }
         if(id == R.id.item2){
             Intent intent = new Intent(MainActivity.this,Profile.class);
             startActivity(intent);
